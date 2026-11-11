@@ -1,0 +1,8 @@
+# Keep Bash scripts compatible with Ubuntu/WSL even when checked out on Windows.
+# Prevent CRLF from turning "set -eo pipefail" into an invalid option error.
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Text source files used by the office-world generator.
+*.py text eol=lf
+*.sdf text eol=lf
