@@ -65,7 +65,7 @@ def build(cfg, sdf_path, svg_path):
             raise ValueError(f"Go2 starts inside furniture: {item['name']}")
     sdf = ET.Element("sdf", version="1.8")
     world = ET.SubElement(sdf, "world", name="office_lab")
-    physics = ET.SubElement(world, "physics", name="default", type="ignored")
+    physics = ET.SubElement(world, "physics", name="default", type="bullet-featherstone")
     ET.SubElement(physics, "max_step_size").text = "0.001"
     ET.SubElement(physics, "real_time_factor").text = "1"
     ET.SubElement(world, "gravity").text = "0 0 -9.81"
