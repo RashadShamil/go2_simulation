@@ -1,0 +1,9 @@
+# Generated datasets / snapshots
+experiments/**
+!experiments/.gitkeep
+*.db3
+*.mcap
+*.log
+__pycache__/
+*.pyc
+.DS_Store
