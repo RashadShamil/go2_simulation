@@ -1,0 +1,8 @@
+# Do not commit private office geometry or recordings to a public repository.
+config/office_private*.json
+photos/
+scans/
+experiments/rosbag_*/
+*.db3
+*.mcap
+*.log

@@ -1,0 +1,84 @@
+{
+  "description": "EXAMPLE ONLY. Not the user's actual office. Units: meters.",
+  "room": {
+    "width_m": 8,
+    "depth_m": 6,
+    "height_m": 2.8,
+    "wall_thickness_m": 0.12,
+    "wall_visual_height_m": 1.35,
+    "door_center_x_m": -2.2,
+    "door_width_m": 1
+  },
+  "robot_start": {
+    "x_m": 0,
+    "y_m": 0,
+    "yaw_deg": 0
+  },
+  "furniture": [
+    {
+      "name": "desk_east_south",
+      "center_m": [
+        2.35,
+        -1.5
+      ],
+      "size_m": [
+        1.35,
+        0.72,
+        0.74
+      ],
+      "color": "#A9BBC8"
+    },
+    {
+      "name": "workbench_east_north",
+      "center_m": [
+        2.35,
+        1.42
+      ],
+      "size_m": [
+        1.35,
+        0.75,
+        0.8
+      ],
+      "color": "#D5B592"
+    },
+    {
+      "name": "bookshelf_west_north",
+      "center_m": [
+        -3.37,
+        1.3
+      ],
+      "size_m": [
+        0.55,
+        1.3,
+        1.8
+      ],
+      "color": "#B3A08E"
+    },
+    {
+      "name": "cabinet_west_south",
+      "center_m": [
+        -3.3,
+        -1.65
+      ],
+      "size_m": [
+        0.65,
+        1,
+        0.95
+      ],
+      "color": "#9BADC1"
+    },
+    {
+      "name": "table_north_center",
+      "center_m": [
+        0,
+        1.75
+      ],
+      "size_m": [
+        1.55,
+        0.7,
+        0.75
+      ],
+      "color": "#BAC1A2"
+    }
+  ]
+}
