@@ -118,3 +118,19 @@ Do not commit bags, cached files, large screenshots, or upstream copied sources.
 ## Attribution and limitations
 
 The Go2 simulation itself is an external community project with a CHAMP controller. Its README says SLAM and Nav2 integration are not complete; they need separate implementation and validation. Sensor readings are simulated and should not be treated as validated physical sensor behavior—especially for glass and reflections.
+
+
+## Office simulation course
+
+The [office-based Go2 simulation course](office_course/README.md) adds a configurable example office, SDF + floorplan generator, WSL-compatible Gazebo launch scripts, ROS 2 teleoperation, a safe low-speed Python movement demo, experiment recording and nine progressively structured teaching notes.
+
+Quick start (from this repository's root, with Jazzy, Harmonic and Go2 already installed):
+
+```bash
+python3 office_course/scripts/generate_office_world.py
+bash office_course/scripts/start_office_only.sh
+# Close Gazebo, then:
+bash office_course/scripts/start_office_go2.sh
+```
+
+The example layout is **fictional**. Check privacy/permission before adding photographs or measured dimensions of a real office to this public repo. Read [office course documentation](office_course/README.md) before enabling sensors or automated motion.
