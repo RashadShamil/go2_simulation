@@ -96,3 +96,13 @@ Each lesson should result in a reproducible command sequence, a short note on ex
 - Robot doesn't move: inspect `/cmd_vel` subscribers, active controllers, simulation pause state and ROS domain.
 
 > This is a teaching prototype. World geometry, controller behavior and sensors still need validation in your particular WSL setup.
+
+## Module 04 — Coordinate frames and TF2
+
+Study the [complete coordinate frames, quaternion and TF2 lesson](docs/11_module04_coordinate_frames_tf2.md). Run the [standalone transform math demo](scripts/module04_transform_demo.py) without Gazebo, then query real published frames using the [ROS 2 TF2 inspector](scripts/module04_tf_inspector.py) when Gazebo is active.
+
+```bash
+python3 office_course/scripts/module04_transform_demo.py
+# With Gazebo running and source office_course/scripts/env.sh:
+python3 office_course/scripts/module04_tf_inspector.py odom base_link 0 0 0
+```
